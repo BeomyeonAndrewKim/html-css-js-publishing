@@ -1,0 +1,200 @@
+@charset "utf-8";
+@import url("./normalize.css");
+@media (max-width:999px) {
+  * {
+    box-sizing: border-box;
+  }
+  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  a:link, a:visited {
+    color: inherit;
+    text-decoration: none;
+  }
+  a:hover, a:focus {
+    color: red;
+  }
+  .header {
+    background-color: #38302E;
+  }
+  .logo {
+    display: block;
+    margin: 10px;
+  }
+  .member {
+    padding: 10px;
+    display: block;
+    text-align: right;
+    background-color: #988574;
+  }
+  .member li {
+    padding: 10px;
+    display: inline;
+    color: white;
+    font-size: 0.8rem;
+  }
+  .search {
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
+  .navigation {
+    background-color: blue;
+  }
+  .main-menu {
+    display: none;
+    background-color: orange;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .main-menu>ul {
+    display: inline-block;
+    font-size: 1.2rem;
+  }
+  .main-menu>ul>li {
+    font-size: 1.0rem;
+    list-style: none;
+  }
+  .main-content {
+    margin-top: 20px;
+    background-color: skyblue;
+    height: auto;
+  }
+  .recommendation, .News, .board, .twitter, .favorite {
+    text-align: center;
+    display: block;
+    border: 1px solid red;
+  }
+  .slogan {
+    display: block;
+    text-align: center;
+    background-color: darkgrey
+  }
+  footer {
+    background-color: silver;
+  }
+}
+@media (min-width:1000px) {
+  * {
+    box-sizing: border-box;
+  }
+  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  .header, .main-menu, .main-content, .slogan {
+    width: 80%;
+    margin: 0 auto;
+  }
+  a:link, a:visited {
+    color: inherit;
+    text-decoration: none;
+  }
+  a:hover, a:focus {
+    color: red;
+  }
+  .header {
+    position: relative;
+  }
+  .logo {
+    display: inline-block;
+    position: absolute;
+    margin-left: 0 0 0 3%;
+  }
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  .member {
+    display: block;
+    text-align: right;
+    margin: 15px 0 0 0;
+  }
+  .member li {
+    padding: 10px;
+    display: inline;
+  }
+  .search {
+    text-align: right;
+    margin: 40px 0 0 0;
+  }
+  .navigation {
+    margin-top: 10px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    background: #988574;
+  }
+  .main-menu {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+  }
+  .main-menu span {
+    margin-bottom: 5px;
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+  }
+  .main-menu>ul>li {
+    padding: 5px;
+    font-size: 1.0rem;
+    list-style: none;
+  }
+  .main-content {
+    margin-top: 20px;
+    background-color: skyblue;
+    height: auto;
+  }
+  .main-contents-1 {
+    display: block;
+    background-color: coral;
+  }
+  .recommendation {
+    display: inline-block;
+    width: 29%;
+    border: 1px solid red;
+  }
+  .News {
+    display: inline-block;
+    width: 70%;
+    border: 1px solid red;
+  }
+  .main-contents-2 {
+    display: block;
+    background-color: yellow;
+  }
+  .board, .twitter, .favorite {
+    display: inline-block;
+    border: 1px solid red;
+  }
+  .board {
+    width: 30%;
+  }
+  .twitter {
+    width: 38%;
+  }
+  .favorite {
+    width: 30%;
+  }
+  .slogan {
+    display: block;
+    text-align: center;
+    background-color: darkgrey
+  }
+  footer {
+    background-color: silver;
+  }
+}

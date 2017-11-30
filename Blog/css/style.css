@@ -1,0 +1,324 @@
+@charset "utf-8";
+@import url("./normalize.css");
+@import url('https://fonts.googleapis.com/css?family=Oswald|PT+Serif|Varela+Round');
+
+/* Common Fonts */
+
+.blog-article1 h3, .blog-article1 p, .photo-slide-count, .blog-article2 h3, .blog-article2 p, blockquote>cite, .related-contents-article, .btb {
+  font-family: "Varela Round";
+}
+.editor span, .blog-article1 h4, .blue-ocean-title, .photo-slide span, blockquote>p, blockquote span, .wolf span {
+  font-family: "PT Serif";
+  font-style: italic;
+}
+
+/* Common Color */
+
+.editor, .blog-article1 h4, .blog-article1-p, .related-contents p {
+  color: #868686;
+}
+.datetime, .blue-ocean-title, .photo-slide, blockquote span, .wolf span {
+  color: #b8b8b8;
+}
+.blog-article2-top, .blog-article2-bottom, .photo-slide-count {
+  color: #868688;
+}
+.blog-article1 h3, blockquote, .related-contents h3 {
+  color: #222222;
+}
+
+/* Box-Sizing */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* CSS Reset */
+
+html, body, button, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Hidden Contents */
+
+.readable-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+}
+
+/* Container Style */
+
+.container {
+  width: 962px;
+  margin: 0 auto;
+  padding: 0 120px;
+  position: relative;
+  border: 1px solid #aaaaaa;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+/* Header Style */
+
+.header {
+  padding-top: 50px;
+  font-family: "Oswald";
+  font-weight: bold;
+  font-size: 12px;
+  position: relative;
+}
+.fashion, .btb {
+  color: #1f4ba5;
+}
+.datetime {
+  margin-left: 30px;
+}
+.editor {
+  font-size: 10px;
+  letter-spacing: 1px;
+  float: right;
+}
+
+/* Main-Contents */
+
+.main-contents {
+  margin-top: 25px;
+  overflow: visible;
+}
+
+/* Blog Article 1 */
+
+.blog-article1 h3 {
+  font-size: 44px;
+  width: 480px;
+  height: 152px;
+}
+.blog-article1 h4 {
+  font-size: 22px;
+  text-align: left;
+  line-height: 34px;
+  width: 565px;
+  height: 95px;
+  margin-top: 49px;
+}
+.blog-article1 h4::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 15px;
+  background-image: url("/Images/icon.png");
+  position: absolute;
+  left: 76px;
+  top: 300px;
+}
+.blog-article1-p {
+  display: inline-block;
+  margin-top: 41px;
+  font-size: 16px;
+  line-height: 28px;
+  width: 593px;
+}
+
+/* Blue-Ocean */
+
+.blue-ocean {
+  margin-top: 45px;
+  transform: translateX(-120px);
+}
+.blue-ocean-title {
+  display: block;
+  margin-top: 30px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+/* Photo Slide */
+
+.photo-slide {
+  width: 963px;
+  margin-top: 51px;
+  /* display: flex; */
+  transform: translateX(-120px);
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+  /* float: left; */
+}
+.grape {
+  float: left;
+}
+.bus {
+  float: left;
+}
+.port {
+  float: left;
+}
+.mountain {
+  float: left;
+}
+.photo-slide-btn {
+  margin-top: 38px;
+  display: inline-block;
+  height: 60px;
+}
+.next, .previous {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  padding-top: 60px;
+}
+.previous {
+  background: url("/Images/move-previous.png");
+}
+.next {
+  background: url("/Images/move-next.png");
+}
+.photo-slide-count {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 14px;
+  margin-left: 30px;
+  position: relative;
+  top: -40px;
+}
+.photo-slide-count span {
+  font-size: 8px;
+  position: relative;
+  top: -4px;
+}
+
+/* Blog Article 2 */
+
+.blog-article2 {
+  margin-top: 25px;
+}
+.blog-article2 h3 {
+  font-size: 28px;
+  width: 543px;
+  top: 60px;
+}
+.blog-article2-top {
+  width: 596px;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 41px;
+}
+
+/* Blockquote */
+
+blockquote {
+  margin-top: 41px;
+  font-size: 18px;
+  line-height: 30px;
+}
+blockquote::before {
+  content: "";
+  position: absolute;
+  left: 76px;
+  top: 1850px;
+  width: 13px;
+  height: 11px;
+  background: url("/Images/quote.png");
+}
+blockquote img {
+  border-radius: 50%;
+  margin-bottom: 18px;
+}
+blockquote>p, cite {
+  display: inline-block;
+}
+blockquote>p {
+  width: 357px;
+}
+blockquote>cite {
+  font-size: 14px;
+  line-height: 16px;
+  margin-left: 45px;
+  vertical-align: top;
+}
+blockquote span {
+  font-size: 12px;
+}
+
+/* Blog-Article 2 Bottom */
+
+.blog-article2-bottom {
+  width: 581px;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 35px;
+}
+
+/* Related Contents */
+
+.related-contents {
+  margin-top: 39px;
+}
+
+/* Wolf */
+
+.wolf {
+  width: 600px;
+  text-align: center;
+  position: relative;
+}
+.wolf span {
+  font-size: 12px;
+  line-height: 18px;
+}
+.playimg {
+  position: absolute;
+  left: 60px;
+  top: 206px;
+}
+.runimg {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+/* Realated Contents Articles */
+
+.related-contents-article {
+  margin-top: 41px;
+}
+.related-contents-left, .related-contents-right {
+  display: inline-block;
+  width: 266px;
+}
+.related-contents h3 {
+  font-size: 18px;
+}
+.related-contents-right {
+  margin-left: 54px;
+  vertical-align: top;
+  width: 262px;
+}
+.related-contents p {
+  margin-top: 14px;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+/* footer */
+
+.sharing {
+  margin-top: 49px;
+  display: block;
+}
+.btb {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration: none;
+  padding: 40px 0;
+}
