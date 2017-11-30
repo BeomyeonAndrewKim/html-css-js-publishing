@@ -1,0 +1,49 @@
+@charset "utf-8";
+@import url("./normalize.css");
+@import url("./fonts.css");
+a:link, a:visited {
+  color: white;
+  text-decoration: none;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  font-size: 0.8rem;
+  font-family: BebasNeuewebfont;
+  background: #000000;
+  height: 27px;
+}
+.logo li {
+  padding-right: 5px;
+}
+.logo, .callno, .login {
+  padding-top: 5px;
+}
+.logo, .login {
+  position: relative;
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  font: white;
+}
+.login .loginLink {
+  padding: 0 10px 0 10px;
+}
+.logo #Facebook a::before {
+  content: '\f09a';
+  font-family: "fontello";
+}
+.logo #Twitter a::before {
+  content: '\f099';
+  font-family: "fontello";
+}
+.logo #Google a::before {
+  content: '\f0d5';
+  font-family: "fontello";
+}
+.logo #Pinterest a::before {
+  content: '\f231';
+  font-family: "fontello";
+}
