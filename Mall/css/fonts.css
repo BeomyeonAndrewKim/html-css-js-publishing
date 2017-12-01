@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Oswald-Bold';
+  src: url('font/Oswald/Oswald-Bold.woff') format('woff'), url('font/Oswald/Oswald-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Varela-Round';
+  src: url('font/Varela/VarelaRound-Regular.woff') format('woff'), url('font/Varela/VarelaRound-Regular.ttf') format('truetype');
+}
