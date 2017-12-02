@@ -49,12 +49,6 @@
       height: auto;
       background: dfdfdf;
     }
-    /* Product-List Style */
-    
-    .product-list {
-      display: block;
-      transition: all 0.5s;
-    }
     /* Product-List-Top Style */
     
     .product-list-top li {
@@ -81,11 +75,11 @@
       margin: 29px auto 49px auto;
     }
     .product-list-top img {
-      display: inline-block;
       max-height: 100%;
       max-width: 100%;
       text-align: center;
       margin: 0 auto;
+      z-index: 1;
     }
     .product-list-top span {
       display: block;
@@ -114,20 +108,29 @@
       background: url('/images/new.png') no-repeat;
     }
     .product-clicked {
+      content: "";
+      display: block;
+      width: 240px;
+      height: 360px;
       background: black;
-      color: white;
+      opacity: 0.9;
+      z-index: 2;
     }
-    /* Product-List-Bottom */
+    /* wish-list Style*/
     
-    .product-list-bottom li {
+    .wish-container {
+      display: block;
+      margin-top: 11px;
+    }
+    .wish-list li {
+      background: indianred;
       display: block;
       position: relative;
       font-family: "Varela Round";
       text-align: center;
       float: left;
-      width: 25%;
-      height: 360px;
+      width: 75%;
+      height: 120px;
       border: 1px solid #aaaaaa;
-      border-top: 0;
-      border-right: 0;
+      margin: 0 12.5%;
     }
