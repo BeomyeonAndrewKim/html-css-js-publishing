@@ -1,8 +1,14 @@
 @font-face {
-  font-family: 'Oswald-Bold';
-  src: url('font/Oswald/Oswald-Bold.woff') format('woff'), url('font/Oswald/Oswald-Bold.ttf') format('truetype');
+    font-family: 'Oswald-Bold';
+    src: url('font/Oswald/Oswald-Bold.woff') format('woff'), url('font/Oswald/Oswald-Bold.ttf') format('truetype');
 }
+
 @font-face {
-  font-family: 'Varela-Round';
-  src: url('font/Varela/VarelaRound-Regular.woff') format('woff'), url('font/Varela/VarelaRound-Regular.ttf') format('truetype');
+    font-family: 'Varela-Round';
+    src: url('/css/font/Varela_Round/VarelaRound-Regular.woff') format('woff'), url('/css/font/Varela_Round/VarelaRound-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PT-Serif';
+    src: url('/css/font/PT_Serif/PT_Serif-Web-Italic.woff') format('woff'), url('/css/font/PT_Serif/PT_Serif-Web-Italic.ttf') format('truetype');
 }

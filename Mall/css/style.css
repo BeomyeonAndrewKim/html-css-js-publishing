@@ -3,134 +3,353 @@
     @import url("/css/fonts.css");
     /* Box-Sizing */
     
-    *, *::before, *::after {
-      box-sizing: border-box;
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
     }
     /* CSS Reset */
     
-    html, body, button, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-      margin: 0;
-      padding: 0;
-      border: 0;
-      font-size: 100%;
-      font: inherit;
-      vertical-align: baseline;
+    html,
+    body,
+    button,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
     }
     /* Hidden Contents */
     
     .readable-hidden {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      overflow: hidden;
-      margin: -1px;
-      clip: rect(0, 0, 0, 0);
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        margin: -1px;
+        clip: rect(0, 0, 0, 0);
     }
     /* Link Style */
     
     a {
-      color: inherit;
-      text-decoration: none;
+        color: inherit;
+        text-decoration: none;
     }
-    a:hover, a:focus {
-      border: #f00;
+    
+    a:hover,
+    a:focus {
+        border: #f00;
     }
     /* List Style */
     
     li {
-      list-style: none;
+        list-style: none;
     }
     /* Mall Style */
     
     .mall {
-      display: block;
-      max-width: 960px;
-      margin: 0 auto;
-      height: auto;
-      background: dfdfdf;
+        display: block;
+        max-width: 960px;
+        margin: 0 auto;
+        height: auto;
+        background: dfdfdf;
     }
     /* Product-List-Top Style */
     
     .product-list-top li {
-      display: block;
-      position: relative;
-      font-family: "Varela Round";
-      text-align: center;
-      float: left;
-      width: 25%;
-      height: 360px;
-      border: 1px solid #aaaaaa;
-      border-top: 0;
-      border-right: 0;
+        display: block;
+        position: relative;
+        font-family: "Varela-Round";
+        text-align: center;
+        float: left;
+        width: 25%;
+        height: 360px;
+        border: 1px solid #aaaaaa;
+        border-top: 0;
+        border-right: 0;
     }
+    
     .product-list-top li:last-child {
-      border-right: 1px solid #aaaaaa;
+        border-right: 1px solid #aaaaaa;
     }
+    
     .product-list-top li>h3 {
-      font-size: 12px;
-      line-height: 16px;
-      min-height: 29px;
-      max-width: 170px;
-      display: inline-block;
-      margin: 29px auto 49px auto;
+        font-size: 12px;
+        line-height: 16px;
+        min-height: 29px;
+        max-width: 170px;
+        display: inline-block;
+        margin: 29px auto 49px auto;
     }
+    
     .product-list-top img {
-      max-height: 100%;
-      max-width: 100%;
-      text-align: center;
-      margin: 0 auto;
-      z-index: 1;
+        max-height: 100%;
+        max-width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        z-index: 1;
     }
+    
     .product-list-top span {
-      display: block;
-      margin: 63px auto 29px auto;
-      font-family: "Oswald-Bold";
-      font-size: 12px;
-      letter-spacing: 1.2px;
+        display: block;
+        margin: 63px auto 29px auto;
+        font-family: "Oswald-Bold";
+        font-size: 12px;
+        letter-spacing: 1.2px;
     }
     /* Product-List-Top Each Style */
     
     .product-list-top span::before {
-      content: "";
-      position: absolute;
-      width: 34px;
-      height: 19px;
-      left: 20px;
-      transform: translateY(1px);
+        content: "";
+        position: absolute;
+        width: 34px;
+        height: 19px;
+        left: 20px;
+        transform: translateY(1px);
     }
+    
     .product-list-top-1 span::before {
-      background: url('/images/hit.png') no-repeat;
+        background: url('/images/hit.png') no-repeat;
     }
+    
     .product-list-top-2 span::before {
-      background: url('/images/sale.png') no-repeat;
+        background: url('/images/sale.png') no-repeat;
     }
+    
     .product-list-top-4 span::before {
-      background: url('/images/new.png') no-repeat;
+        background: url('/images/new.png') no-repeat;
     }
+    
     .product-clicked {
-      content: "";
-      display: block;
-      width: 240px;
-      height: 360px;
-      background: black;
-      opacity: 0.9;
-      z-index: 2;
+        content: "";
+        display: block;
+        width: 240px;
+        height: 360px;
+        background: black;
+        opacity: 0.9;
+        z-index: 2;
     }
     /* wish-list Style*/
     
-    .wish-container {
-      display: block;
-      margin-top: 11px;
-    }
     .wish-list li {
-      background: indianred;
-      display: block;
-      position: relative;
-      font-family: "Varela Round";
-      text-align: center;
-      float: left;
-      width: 75%;
-      height: 120px;
-      border: 1px solid #aaaaaa;
-      margin: 0 12.5%;
+        display: block;
+        float: left;
+        width: 76%;
+        min-height: 120px;
+        border: 1px solid #aaaaaa;
+        margin: 0 12.5%;
+    }
+    
+    .wish-list img {
+        float: left;
+        margin: 15px;
+    }
+    
+    .wish-list h3 {
+        font-family: "Varela-Round";
+        font-size: 12px;
+        line-height: 16px;
+        max-width: 155px;
+        height: 90px;
+        margin-left: 4%;
+        margin-top: 15px;
+        float: left;
+    }
+    
+    .wish-list h3>span {
+        display: block;
+        font-family: "PT-Serif";
+        font-size: 12px;
+        line-height: 18px;
+        color: #b8b8b8;
+        margin-top: 16px;
+    }
+    
+    .wish-list>li>span {
+        font-family: "Oswald-Bold";
+        font-size: 14px;
+        letter-spacing: 1.4px;
+        width: 32px;
+        height: 90px;
+        margin-left: 11%;
+        margin-top: 15px;
+        float: left;
+        position: relative;
+    }
+    
+    .wish-list-1>span::after {
+        background: url("/images/new.png") no-repeat;
+        display: inline-block;
+        content: "";
+        width: 34px;
+        height: 19px;
+        margin-top: 23px;
+    }
+    
+    .wish-list-2>span::after {
+        content: "$160";
+        width: 66px;
+        height: 19px;
+        color: #a1a1a1;
+        font-size: 9px;
+        letter-spacing: 0.9px;
+        background: url("/images/sale.png") no-repeat;
+        text-align: right;
+        float: left;
+        margin-top: 23px;
+        text-decoration: line-through;
+    }
+    
+    .wish-list-4>span::after {
+        background: url("/images/hit.png") no-repeat;
+        display: inline-block;
+        content: "";
+        width: 34px;
+        height: 19px;
+        margin-top: 23px;
+    }
+    
+    .wish-list>li>span>img {
+        position: absolute;
+    }
+    /* Button Style */
+    
+    .wish-list div {
+        max-width: 240px;
+        height: 90px;
+        margin-top: 15px;
+        margin-left: 9.3%;
+        float: left;
+    }
+    
+    .wish-list>li>div>button {
+        font-size: 12px;
+    }
+    
+    .size {
+        width: 90px;
+        height: 30px;
+        background: #f6f6f6;
+        border-radius: 20px;
+        font-family: "PT-Serif";
+        color: #868686;
+        margin-right: 11px;
+        text-align: left;
+        padding-left: 20px;
+    }
+    
+    .size::after {
+        content: "";
+        width: 6px;
+        height: 6px;
+        display: inline-block;
+        margin-left: 28px;
+        transform: translateY(-1px);
+    }
+    
+    .add-to-cart {
+        width: 110px;
+        height: 30px;
+        background: #1f4ba5;
+        border-radius: 20px;
+        font-family: "Varela-Round";
+        color: #ffffff;
+    }
+    
+    .add-to-wishlist {
+        font-family: "PT-Serif";
+        color: #b8b8b8;
+        line-height: 17px;
+        margin-top: 8px;
+        background: none;
+    }
+    
+    .add-to-wishlist::before {
+        display: inline-block;
+        content: "";
+        width: 17px;
+        height: 14px;
+        background: url('/images/add-to-wishlist.png');
+        margin-right: 7px;
+        transform: translateY(3px);
     }
