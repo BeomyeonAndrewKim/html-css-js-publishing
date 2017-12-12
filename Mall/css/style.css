@@ -10,88 +10,7 @@
     }
     /* CSS Reset */
     
-    html,
-    body,
-    button,
-    div,
-    span,
-    applet,
-    object,
-    iframe,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    blockquote,
-    pre,
-    a,
-    abbr,
-    acronym,
-    address,
-    big,
-    cite,
-    code,
-    del,
-    dfn,
-    em,
-    img,
-    ins,
-    kbd,
-    q,
-    s,
-    samp,
-    small,
-    strike,
-    strong,
-    sub,
-    sup,
-    tt,
-    var,
-    b,
-    u,
-    i,
-    center,
-    dl,
-    dt,
-    dd,
-    ol,
-    ul,
-    li,
-    fieldset,
-    form,
-    label,
-    legend,
-    table,
-    caption,
-    tbody,
-    tfoot,
-    thead,
-    tr,
-    th,
-    td,
-    article,
-    aside,
-    canvas,
-    details,
-    embed,
-    figure,
-    figcaption,
-    footer,
-    header,
-    hgroup,
-    menu,
-    nav,
-    output,
-    ruby,
-    section,
-    summary,
-    time,
-    mark,
-    audio,
-    video {
+    html,body,button,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp, small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset, form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
         margin: 0;
         padding: 0;
         border: 0;
@@ -99,6 +18,24 @@
         font: inherit;
         vertical-align: baseline;
     }
+    /* Grid System */
+    
+    .col-1 {width: 120px;}
+    .col-2 {width: 240px;}
+    .col-3 {width: 360px;} 
+    .col-4 {width: 480px;}
+    .col-5 {width: 600px;}
+    .col-6 {width: 720px;}
+    .col-7 {width: 840px;}
+    .col-8 {width: 960px;}
+
+    /* @media only screen and (max-width: 460px){
+        .mall{width: 320px;}
+        .m-col-1{width:80px;}
+        .m-col-2{width:160px;}
+        .m-col-3{width:240px;}
+        .m-col-4{width:320px;}
+    } */
     /* Hidden Contents */
     
     .readable-hidden {
@@ -108,6 +45,11 @@
         overflow: hidden;
         margin: -1px;
         clip: rect(0, 0, 0, 0);
+    }
+    /* Clearfix */
+    .clearFix::after{
+        content: "";
+
     }
     /* Link Style */
     
@@ -128,46 +70,43 @@
     /* Mall Style */
     
     .mall {
-        display: block;
         max-width: 960px;
         margin: 0 auto;
         height: auto;
-        background: dfdfdf;
+        background: #dfdfdf;
     }
     /* Product-List-Top Style */
-    
+    .product-list-top-2{
+        z-index: 1;
+    }
     .product-list-top li {
-        display: block;
         position: relative;
         font-family: "Varela-Round";
         text-align: center;
         float: left;
-        width: 25%;
         height: 360px;
-        border: 1px solid #aaaaaa;
+        border: 1px solid #ececec;
         border-top: 0;
         border-right: 0;
+        z-index: 2;
     }
-    
-    .product-list-top li:last-child {
-        border-right: 1px solid #aaaaaa;
+    .product-list-top li:last-child{
+        border-right: 1px solid #ececec;
     }
-    
     .product-list-top li>h3 {
         font-size: 12px;
         line-height: 16px;
         min-height: 29px;
         max-width: 170px;
-        display: inline-block;
+        display: block;
         margin: 29px auto 49px auto;
     }
     
     .product-list-top img {
-        max-height: 100%;
-        max-width: 100%;
+        /* max-height: 100%;
+        max-width: 100%;  이미지 크기 자동 조정*/
         text-align: center;
         margin: 0 auto;
-        z-index: 1;
     }
     
     .product-list-top span {
@@ -200,24 +139,34 @@
         background: url('/images/new.png') no-repeat;
     }
     
+    /* Product-Clicked */
     .product-clicked {
+        position: absolute;
         content: "";
         display: block;
         width: 240px;
         height: 360px;
-        background: black;
-        opacity: 0.9;
-        z-index: 2;
+        background: darkblue;;
+        opacity: 0.6;
+        z-index: 3;
     }
+
     /* wish-list Style*/
+    
+    .wish-container {
+        float: left;
+        padding: 15px 0;
+        background: #dfdfdf;
+    }
     
     .wish-list li {
         display: block;
         float: left;
         width: 76%;
         min-height: 120px;
-        border: 1px solid #aaaaaa;
+        border-top: 1px solid #ececec;
         margin: 0 12.5%;
+        background: #ffffff;
     }
     
     .wish-list img {
@@ -325,6 +274,7 @@
         display: inline-block;
         margin-left: 28px;
         transform: translateY(-1px);
+        background: url("/images/down.png") no-repeat;
     }
     
     .add-to-cart {
@@ -340,7 +290,7 @@
         font-family: "PT-Serif";
         color: #b8b8b8;
         line-height: 17px;
-        margin-top: 8px;
+        margin-top: 11px;
         background: none;
     }
     
@@ -353,3 +303,57 @@
         margin-right: 7px;
         transform: translateY(3px);
     }
+
+    /* Product List Bottom */
+
+    .product-list-bottom li{
+        position: relative;
+        font-family: "Varela-Round";
+        text-align: center;
+        float: left;
+        height: 240px;
+        border: 1px solid #ececec;
+        border-top: 0;
+        border-right: 0;
+        z-index: 2;
+    }
+    .product-list-bottom li:nth-child(4){
+        border-right: 1px solid #ececec;
+    }
+    .product-list-bottom li:nth-child(8){
+        border-right: 1px solid #ececec;
+    }
+    .product-list-bottom h3{
+        font-size: 12px;
+        line-height: 16px;
+        min-height: 32px;
+        max-width: 160px;
+        display: block;
+        margin: 29px auto 11px auto;
+    }
+    .product-list-bottom img{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .product-list-bottom span{
+        display: block;
+        margin: 28px auto 29px auto;
+        font-family: "Oswald-Bold";
+        font-size: 12px;
+        letter-spacing: 1.2px;
+    }
+    .product-list-bottom span::before{
+        content: "";
+        position: absolute;
+        width: 34px;
+        height: 19px;
+        left: 20px;
+        transform: translateY(1px);
+    }
+    .product-list-bottom-4 span::before{
+        background: url("/images/sale.png") no-repeat;
+    }
+    .product-list-bottom-7 span::before{
+        background: url("/images/new.png") no-repeat;
+    }
+    
