@@ -1,9 +1,11 @@
 $(document).ready(function() {
-  var list = $('.product-list-top-2');
-
+  var list = $('.product-list-top-1');
+  console.log(list);
 
   list.on("click", function(event) {
-    $(this).toggleClass('product-clicked');
+    // console.log(this);
+    console.log($(this).find(".product-clicked"));
+    $(this).find(".product-clicked").css("display","block");
   });
 
 
