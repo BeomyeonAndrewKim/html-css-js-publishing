@@ -6,60 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-    <script src="/js/script.js"></script>
 
     <title>Men's Fashion | Nordstrom</title>
 </head>
 
 <body>
     <div class="mall">
+        <h1 class="readable-hidden">Men's Fashion | Nordstrom</h1>
         <section class="product-list">
+            
             <ul class="product-list-top">
-                <li class="col-2 product-list-top-1">
+                    <h2 class="readable-hidden">Top Product List</h2>
+                <li class="col-2 product1">
                     <h3>Lacoste Men's Pocket Polo Shirt - Sahara</h3>
                     <img src="/images/top/lacoste-sahara.png" alt="Lacoste Men's Pocket Polo Shirt - Sahara">
                     <span>$75</span>
                     <li class="col-2 product-clicked">
                             <div class="product-clicked-buttons">
-                            <button class="size">Size</button><button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button> 
+                            <select class="size">
+                                <option selected>Size</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                            <button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button> 
                         </div>
                         </li>
                 </li>
-                <li class="col-2 product-list-top-2">
+                <li class="col-2 product2">
                     <h3>Red Wing Men's Classic Suede Chukka Boots -Sage</h3>
                     <img src="/images/top/red-sage.png" alt="Red Wing Men's Classic Suede Chukka Boots -Sage">
                     <span>65$</span>
                     <li class="col-2 product-clicked">
                             <div class="product-clicked-buttons">
-                            <button class="size">Size</button><button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button> 
+                                    <select class="size">
+                                            <option selected>Size</option>
+                                            <option value="S">S</option>
+                                            <option value="M">M</option>
+                                            <option value="L">L</option>
+                                            <option value="XL">XL</option>
+                                        </select>
+                            <button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button> 
                         </div>
                         </li>
                 </li>
-                <li class="col-2 product-list-top-3">
+                <li class="col-2 product3">
                     <h3>Lyle & Scott Men's Short Sleeve Camo Pocket</h3>
                     <img src="/images/top/lyle-pocket.png" alt="Lyle & Scott Men's Short Sleeve Camo Pocket">
                     <span>$60</span>
                     <li class="col-2 product-clicked">
                             <div class="product-clicked-buttons">
-                            <button class="size">Size</button><button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button> 
+                            <select class="size">
+                                <option selected>Size</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                            <button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button> 
                         </div>
                         </li>
                 </li>
-                <li class="col-2 product-list-top-4">
+                <li class="col-2 product4">
                     <h3>Lacoste Men's Polo Shirts - Bright Pink</h3>
                     <img src="/images/top/lacoste-link.png" alt="Lacoste Men's Polo Shirts - Bright Pink">
                     <span>85$</span>
                     <li class="col-2 product-clicked">
-                            <div class="product-clicked-buttons">
-                            <button class="size">Size</button><button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button> 
-                        </div>
-                        </li>
+                        <div class="product-clicked-buttons">
+                        <select class="size">
+                                <option selected>Size</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        <button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button> 
+                    </div>
+                    </li>
                 </li>
-               
             </ul>
         </section>
-        <div class="wish-container">
+        <section class="wish-container">
+                <h2 class="readable-hidden">Wish list</h2>
             <ul class="wish-list">
                 <li class="wish-list-1">
                     <img src="/images/wishlist/luke-blazer.png" alt="Luke 1977 Men's Soeron 2 Single Breasted Blazer - Charcoal">
@@ -68,7 +97,18 @@
                     </h3>
                     <span>$145</span>
                     <div class="wish-list-btn1">
-                        <button class="size">Size</button><button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button>
+                            <select class="size">
+                                    <option selected>Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                        <button class="add-to-cart">Add to cart</button>
+                        <div class="add-to-wishlist-box">
+                        <input type="checkbox" class="add-to-wishlist" id="wishlist-check"></input>
+                        <label for="wishlist-check">Add to wishlist</label>
+                        </div>
                     </div>
                 </li>
                 <li class="wish-list-2">
@@ -78,7 +118,14 @@
                     </h3>
                     <span>$90</span>
                     <div class="wish-list-btn2">
-                        <button class="size">Size</button><button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button>
+                            <select class="size">
+                                    <option selected>Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                        <button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button>
                     </div>
                 </li>
                 <li class="wish-list-3">
@@ -88,7 +135,14 @@
                     </h3>
                     <span>145$</span>
                     <div class="wish-list-btn3">
-                        <button class="size">Size</button><button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button>
+                            <select class="size">
+                                    <option selected>Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                        <button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button>
                     </div>
                 </li>
                 <li class="wish-list-4">
@@ -98,54 +152,157 @@
                     </h3>
                     <span>$90</span>
                     <div class="wish-list-btn4">
-                        <button class="size">Size</button><button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button>
+                            <select class="size">
+                                    <option selected>Size</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                        <button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button>
                     </div>
                 </li>
             </ul>
-        </div>
+        </section>
         <ul class="product-list-bottom">
-            <li class="col-2 product-list-bottom-1">
+                <h2 class="readable-hidden">Bottom Product List</h2>
+            <li class="col-2 product5">
                 <h3>Fiorelli Rita Striped Tote Bag</h3>
                 <img src="/images/bottom/fiorelli-bag.png" alt="Fiorelli Rita Striped Tote Bag">
                 <span>$170</span>
+                <li class="col-2 product-clicked">
+                        <div class="product-clicked-buttons">
+                                <select class="size">
+                                        <option selected>Size</option>
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select>
+                        <button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button> 
+                    </div>
+                    </li>
             </li>
-            <li class="col-2 product-list-bottom-2">
+            <li class="col-2 product6">
                 <h3>H&amp;M Chino Shorts</h3>
                 <img src="/images/bottom/ted-bag.png" alt="H&amp;M Chino Shorts">
                 <span>$12</span>
+                <li class="col-2 product-clicked">
+                        <div class="product-clicked-buttons">
+                                <select class="size">
+                                        <option selected>Size</option>
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select>
+                        <button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button> 
+                    </div>
+                    </li>
             </li>
-            <li class="col-2 product-list-bottom-3">
+            <li class="col-2 product7">
                 <h3>Bobbies Elegant Leather Driving Shoes</h3>
                 <img src="/images/bottom/bobbies-shoes.png" alt="Bobbies Elegant Leather Driving Shoes">
                 <span>$140</span>
+                <li class="col-2 product-clicked">
+                        <div class="product-clicked-buttons">
+                                <select class="size">
+                                        <option selected>Size</option>
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select>
+                        <button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button> 
+                    </div>
+                    </li>
             </li>
-            <li class="col-2 product-list-bottom-4">
+            <li class="col-2 product8">
                 <h3>Fiorelli Rita Striped Tote Bag</h3>
                 <img src="/images/bottom/fiorelli-bag2.png" alt="Fiorelli Rita Striped Tote Bag">
                 <span>$170</span>
+                <li class="col-2 product-clicked">
+                        <div class="product-clicked-buttons">
+                                <select class="size">
+                                        <option selected>Size</option>
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select>
+                        <button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button> 
+                    </div>
+                    </li>
             </li>
-            <li class="col-2 product-list-bottom-5">
+            <li class="col-2 product9">
                 <h3>H&amp;M Canvas Parka</h3>
                 <img src="/images/bottom/h-parka.png" alt="H&amp;M Canvas Parka">
                 <span>$69</span>
+                <li class="col-2 product-clicked">
+                        <div class="product-clicked-buttons">
+                                <select class="size">
+                                        <option selected>Size</option>
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select>
+                        <button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button> 
+                    </div>
+                    </li>
             </li>
-            <li class="col-2 product-list-bottom-6">
+            <li class="col-2 product10">
                 <h3>Asos Skinny Band Felt Floppy Hat</h3>
                 <img src="/images/bottom/asos-hat.png" alt="Asos Skinny Band Felt Floppy Hat">
                 <span>$24</span>
+                <li class="col-2 product-clicked">
+                        <div class="product-clicked-buttons">
+                                <select class="size">
+                                        <option selected>Size</option>
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select>
+                        <button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button> 
+                    </div>
+                    </li>
             </li>
-            <li class="col-2 product-list-bottom-7">
+            <li class="col-2 product11">
                 <h3>Ted Baker Leather Massenger Bag</h3>
                 <img src="/images/bottom/ted-bag.png" alt="Ted Baker Leather Massenger Bag">
                 <span>$344</span>
+                <li class="col-2 product-clicked">
+                        <div class="product-clicked-buttons">
+                                <select class="size">
+                                        <option selected>Size</option>
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select>
+                        <button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button> 
+                    </div>
+                    </li>
             </li>
-            <li class="col-2 product-list-bottom-8">
+            <li class="col-2 product12">
                 <h3>H&amp;M Canvas Parka</h3>
                 <img src="/images/bottom/h-parka2.png" alt="H&amp;M Canvas Parka">
                 <span>$69</span>
+                <li class="col-2 product-clicked">
+                        <div class="product-clicked-buttons">
+                                <select class="size">
+                                        <option selected>Size</option>
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select>
+                        <button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button> 
+                    </div>
+                    </li>
             </li>
         </ul>
     </div>
 </body>
-
 </html>

@@ -2,10 +2,15 @@ $(document).ready(function() {
   var list = $('.product-list-top-1');
   console.log(list);
 
-  list.on("click", function(event) {
+  list.on("mouseover", function(event) {
     // console.log(this);
     console.log($(this).find(".product-clicked"));
-    $(this).find(".product-clicked").css("display","block");
+    $(this).children("product-clicked").css("display","block");
+  });
+  list.on("mouseout", function(event) {
+    // console.log(this);
+    console.log($(this).find(".product-clicked"));
+    $(this).children("product-clicked").css("display","none");
   });
 
 

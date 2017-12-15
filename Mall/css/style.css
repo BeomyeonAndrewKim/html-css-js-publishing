@@ -8,6 +8,16 @@
     *::after {
         box-sizing: border-box;
     }
+/* Common Fonts */
+.product-list-bottom span, .wish-list>li>span, .product-list-top span{
+    font-family:"Oswald-Bold";
+}
+.wish-list h3>span, .size, .add-to-wishlist{
+    font-family: "PT-Serif";
+}
+.product-list-top li, .wish-list h3, .add-to-cart,.product-list-bottom li{
+    font-family: "Varela-Round";
+}
     /* CSS Reset */
     
     html,body,button,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp, small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset, form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
@@ -29,13 +39,7 @@
     .col-7 {width: 840px;}
     .col-8 {width: 960px;}
 
-    /* @media only screen and (max-width: 460px){
-        .mall{width: 320px;}
-        .m-col-1{width:80px;}
-        .m-col-2{width:160px;}
-        .m-col-3{width:240px;}
-        .m-col-4{width:320px;}
-    } */
+
     /* Hidden Contents */
     
     .readable-hidden {
@@ -46,24 +50,8 @@
         margin: -1px;
         clip: rect(0, 0, 0, 0);
     }
-    /* Clearfix */
-    .clearFix::after{
-        content: "";
 
-    }
-    /* Link Style */
-    
-    a {
-        color: inherit;
-        text-decoration: none;
-    }
-    
-    a:hover,
-    a:focus {
-        border: #f00;
-    }
     /* List Style */
-    
     li {
         list-style: none;
     }
@@ -76,16 +64,12 @@
         background: #dfdfdf;
     }
     /* Product-List-Top Style */
-    .product-list-top-2{
-        z-index: 1;
-    }
+
     .product-list-top li {
         position: relative;
-        font-family: "Varela-Round";
         text-align: center;
         float: left;
         height: 360px;
-        z-index: 2;
         border-bottom: 1px solid #ececec;
         border-right: 1px solid #ececec;
     }
@@ -112,7 +96,6 @@
     .product-list-top span {
         display: block;
         margin: 63px auto 29px auto;
-        font-family: "Oswald-Bold";
         font-size: 12px;
         letter-spacing: 1.2px;
     }
@@ -127,28 +110,27 @@
         transform: translateY(1px);
     }
     
-    .product-list-top-1 span::before {
+    .product1 span::before {
         background: url('/images/hit.png') no-repeat;
     }
     
-    .product-list-top-2 span::before {
+    .product2 span::before {
         background: url('/images/sale.png') no-repeat;
     }
     
-    .product-list-top-4 span::before {
+    .product4 span::before {
         background: url('/images/new.png') no-repeat;
     }
     
     /* Product-Clicked */
-    .product-clicked {
+    .product-clicked{
+        display: none;
         position: absolute;
         content: "";
-        display: none;
         width: 240px;
         height: 360px;
         background: darkblue;
         font-size: 12px;
-        z-index: 30;
     }
     .product-clicked-buttons{
        margin-top: 161px;
@@ -178,7 +160,6 @@
     }
     
     .wish-list h3 {
-        font-family: "Varela-Round";
         font-size: 12px;
         line-height: 16px;
         max-width: 155px;
@@ -190,7 +171,6 @@
     
     .wish-list h3>span {
         display: block;
-        font-family: "PT-Serif";
         font-size: 12px;
         line-height: 18px;
         color: #b8b8b8;
@@ -198,7 +178,6 @@
     }
     
     .wish-list>li>span {
-        font-family: "Oswald-Bold";
         font-size: 14px;
         letter-spacing: 1.4px;
         width: 32px;
@@ -254,16 +233,14 @@
         float: left;
     }
     
-    .wish-list>li>div>button {
+    .wish-list>li>div>button,select {
         font-size: 12px;
     }
-    
     .size {
         width: 90px;
         height: 30px;
         background: #f6f6f6;
         border-radius: 20px;
-        font-family: "PT-Serif";
         color: #868686;
         margin-right: 11px;
         text-align: left;
@@ -285,16 +262,23 @@
         height: 30px;
         background: #1f4ba5;
         border-radius: 20px;
-        font-family: "Varela-Round";
         color: #ffffff;
     }
     
     .add-to-wishlist {
-        font-family: "PT-Serif";
         color: #b8b8b8;
         line-height: 17px;
         margin-top: 11px;
         background: none;
+    }
+    input[type="checkbox"]{
+        display: none;
+    }
+    input[type="checkbox"] + label{
+        display: inline-block;
+        width: 17px;
+        height: 14px;
+        background: url('/images/add-to-wishlist.png') no-repeat;
     }
     
     .add-to-wishlist::before {
@@ -311,11 +295,9 @@
 
     .product-list-bottom li{
         position: relative;
-        font-family: "Varela-Round";
         text-align: center;
         float: left;
         height: 240px;
-        z-index: 2;
         border-bottom: 1px solid #ececec;
         border-right: 1px solid #ececec;
     }
@@ -338,7 +320,6 @@
     .product-list-bottom span{
         display: block;
         margin: 28px auto 29px auto;
-        font-family: "Oswald-Bold";
         font-size: 12px;
         letter-spacing: 1.2px;
     }
@@ -350,10 +331,10 @@
         left: 20px;
         transform: translateY(1px);
     }
-    .product-list-bottom-4 span::before{
+    .product8 span::before{
         background: url("/images/sale.png") no-repeat;
     }
-    .product-list-bottom-7 span::before{
+    .product11 span::before{
         background: url("/images/new.png") no-repeat;
     }
     
