@@ -1,21 +1,27 @@
+
+
 $(document).ready(function() {
-  var list = $('.product-list-top-1');
-  console.log(list);
+  var listTop = $('.product-list-top>li');
+  var listBottom = $('.product-list-bottom>li');
 
-  list.on("mouseover", function(event) {
-    // console.log(this);
-    console.log($(this).find(".product-clicked"));
-    $(this).children("product-clicked").css("display","block");
+  listTop.on("mouseover", function(event) {
+    $(this).find(".product-clicked").css("display","inline-block");
+    $(this).find(".product-clicked-buttons").css("height","360px");
+    $(this).find("h3").css("color","#ffffff");
   });
-  list.on("mouseout", function(event) {
-    // console.log(this);
-    console.log($(this).find(".product-clicked"));
-    $(this).children("product-clicked").css("display","none");
+  listTop.on("mouseout", function(event) {
+    $(this).find(".product-clicked").css("display","none");
+    $(this).find("h3").css("color","#222222");
   });
 
-
-  //   list.off().click(function() {
-  //     $(this).addClass('product-clicked');
-  //     $(this).parents('.product-list').removeClass('product-clicked');
-  //   });
+  listBottom.on("mouseover", function(event) {
+    $(this).find(".product-clicked").css("display","inline-block");
+    $(this).find(".product-clicked-buttons").css("height","240px")
+    $(this).find("h3").css("color","#ffffff");
+    
+  });
+  listBottom.on("mouseout", function(event) {
+    $(this).find(".product-clicked").css("display","none");
+    $(this).find("h3").css("color","#222222");
+  });
 });

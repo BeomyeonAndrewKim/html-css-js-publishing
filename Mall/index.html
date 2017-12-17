@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <script src="/js/jquery.js"></script>
+    <script src="/js/script.js"></script>
 
     <title>Men's Fashion | Nordstrom</title>
 </head>
@@ -14,14 +16,13 @@
     <div class="mall">
         <h1 class="readable-hidden">Men's Fashion | Nordstrom</h1>
         <section class="product-list">
-            
             <ul class="product-list-top">
                     <h2 class="readable-hidden">Top Product List</h2>
                 <li class="col-2 product1">
                     <h3>Lacoste Men's Pocket Polo Shirt - Sahara</h3>
                     <img src="/images/top/lacoste-sahara.png" alt="Lacoste Men's Pocket Polo Shirt - Sahara">
                     <span>$75</span>
-                    <li class="col-2 product-clicked">
+                    <div class="col-2 product-clicked">
                             <div class="product-clicked-buttons">
                             <select class="size">
                                 <option selected>Size</option>
@@ -30,15 +31,19 @@
                                 <option value="L">L</option>
                                 <option value="XL">XL</option>
                             </select>
-                            <button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button> 
+                            <button class="add-to-cart">Add to cart</button>
+                            <div class="add-to-wishlist-box">
+                                <input type="checkbox" class="add-to-wishlist" id="wishlist-check1"></input>
+                                <label for="wishlist-check1">Add to wishlist</label>
+                                </div> 
+                            </div>
                         </div>
-                        </li>
                 </li>
                 <li class="col-2 product2">
                     <h3>Red Wing Men's Classic Suede Chukka Boots -Sage</h3>
                     <img src="/images/top/red-sage.png" alt="Red Wing Men's Classic Suede Chukka Boots -Sage">
-                    <span>65$</span>
-                    <li class="col-2 product-clicked">
+                    <span class="sale">65$</span>
+                    <div class="col-2 product-clicked">
                             <div class="product-clicked-buttons">
                                     <select class="size">
                                             <option selected>Size</option>
@@ -47,15 +52,19 @@
                                             <option value="L">L</option>
                                             <option value="XL">XL</option>
                                         </select>
-                            <button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button> 
+                            <button class="add-to-cart">Add to cart</button>
+                            <div class="add-to-wishlist-box">
+                                <input type="checkbox" class="add-to-wishlist" id="wishlist-check2"></input>
+                                <label for="wishlist-check2">Add to wishlist</label>
+                                </div>
                         </div>
-                        </li>
+                    </div>
                 </li>
                 <li class="col-2 product3">
                     <h3>Lyle & Scott Men's Short Sleeve Camo Pocket</h3>
                     <img src="/images/top/lyle-pocket.png" alt="Lyle & Scott Men's Short Sleeve Camo Pocket">
                     <span>$60</span>
-                    <li class="col-2 product-clicked">
+                    <div class="col-2 product-clicked">
                             <div class="product-clicked-buttons">
                             <select class="size">
                                 <option selected>Size</option>
@@ -64,15 +73,19 @@
                                 <option value="L">L</option>
                                 <option value="XL">XL</option>
                             </select>
-                            <button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button> 
+                            <button class="add-to-cart">Add to cart</button>
+                            <div class="add-to-wishlist-box">
+                                <input type="checkbox" class="add-to-wishlist" id="wishlist-check3"></input>
+                                <label for="wishlist-check3">Add to wishlist</label>
+                                </div>
                         </div>
-                        </li>
+                    </div>
                 </li>
                 <li class="col-2 product4">
                     <h3>Lacoste Men's Polo Shirts - Bright Pink</h3>
                     <img src="/images/top/lacoste-link.png" alt="Lacoste Men's Polo Shirts - Bright Pink">
                     <span>85$</span>
-                    <li class="col-2 product-clicked">
+                    <div class="col-2 product-clicked">
                         <div class="product-clicked-buttons">
                         <select class="size">
                                 <option selected>Size</option>
@@ -81,9 +94,13 @@
                                 <option value="L">L</option>
                                 <option value="XL">XL</option>
                             </select>
-                        <button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button> 
+                        <button class="add-to-cart">Add to cart</button>
+                        <div class="add-to-wishlist-box">
+                            <input type="checkbox" class="add-to-wishlist" id="wishlist-check4"></input>
+                            <label for="wishlist-check4">Add to wishlist</label>
+                            </div>
                     </div>
-                    </li>
+                    </div>
                 </li>
             </ul>
         </section>
@@ -96,7 +113,7 @@
                         <span>blazers</span>
                     </h3>
                     <span>$145</span>
-                    <div class="wish-list-btn1">
+                    <div class="wish-list-btn">
                             <select class="size">
                                     <option selected>Size</option>
                                     <option value="S">S</option>
@@ -106,8 +123,8 @@
                                 </select>
                         <button class="add-to-cart">Add to cart</button>
                         <div class="add-to-wishlist-box">
-                        <input type="checkbox" class="add-to-wishlist" id="wishlist-check"></input>
-                        <label for="wishlist-check">Add to wishlist</label>
+                        <input type="checkbox" class="add-to-wishlist" id="wishlist-check5"></input>
+                        <label for="wishlist-check5">Add to wishlist</label>
                         </div>
                     </div>
                 </li>
@@ -117,7 +134,7 @@
                         <span>Boots</span>
                     </h3>
                     <span>$90</span>
-                    <div class="wish-list-btn2">
+                    <div class="wish-list-btn">
                             <select class="size">
                                     <option selected>Size</option>
                                     <option value="S">S</option>
@@ -125,7 +142,11 @@
                                     <option value="L">L</option>
                                     <option value="XL">XL</option>
                                 </select>
-                        <button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button>
+                        <button class="add-to-cart">Add to cart</button>
+                        <div class="add-to-wishlist-box">
+                            <input type="checkbox" class="add-to-wishlist" id="wishlist-check6"></input>
+                            <label for="wishlist-check6">Add to wishlist</label>
+                            </div>
                     </div>
                 </li>
                 <li class="wish-list-3">
@@ -134,7 +155,7 @@
                         <span>Bags</span>
                     </h3>
                     <span>145$</span>
-                    <div class="wish-list-btn3">
+                    <div class="wish-list-btn">
                             <select class="size">
                                     <option selected>Size</option>
                                     <option value="S">S</option>
@@ -142,7 +163,11 @@
                                     <option value="L">L</option>
                                     <option value="XL">XL</option>
                                 </select>
-                        <button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button>
+                        <button class="add-to-cart">Add to cart</button>
+                        <div class="add-to-wishlist-box">
+                            <input type="checkbox" class="add-to-wishlist" id="wishlist-check7"></input>
+                            <label for="wishlist-check7">Add to wishlist</label>
+                            </div>
                     </div>
                 </li>
                 <li class="wish-list-4">
@@ -151,7 +176,7 @@
                         <span>Scarves</span>
                     </h3>
                     <span>$90</span>
-                    <div class="wish-list-btn4">
+                    <div class="wish-list-btn">
                             <select class="size">
                                     <option selected>Size</option>
                                     <option value="S">S</option>
@@ -159,7 +184,11 @@
                                     <option value="L">L</option>
                                     <option value="XL">XL</option>
                                 </select>
-                        <button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button>
+                        <button class="add-to-cart">Add to cart</button>
+                        <div class="add-to-wishlist-box">
+                            <input type="checkbox" class="add-to-wishlist" id="wishlist-check8"></input>
+                            <label for="wishlist-check8">Add to wishlist</label>
+                            </div>
                     </div>
                 </li>
             </ul>
@@ -170,7 +199,7 @@
                 <h3>Fiorelli Rita Striped Tote Bag</h3>
                 <img src="/images/bottom/fiorelli-bag.png" alt="Fiorelli Rita Striped Tote Bag">
                 <span>$170</span>
-                <li class="col-2 product-clicked">
+                <div class="col-2 product-clicked">
                         <div class="product-clicked-buttons">
                                 <select class="size">
                                         <option selected>Size</option>
@@ -179,15 +208,19 @@
                                         <option value="L">L</option>
                                         <option value="XL">XL</option>
                                     </select>
-                        <button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button> 
+                        <button class="add-to-cart">Add to cart</button>
+                        <div class="add-to-wishlist-box">
+                            <input type="checkbox" class="add-to-wishlist" id="wishlist-check9"></input>
+                            <label for="wishlist-check9">Add to wishlist</label>
+                            </div>                         
                     </div>
-                    </li>
+                </div>
             </li>
             <li class="col-2 product6">
                 <h3>H&amp;M Chino Shorts</h3>
                 <img src="/images/bottom/ted-bag.png" alt="H&amp;M Chino Shorts">
                 <span>$12</span>
-                <li class="col-2 product-clicked">
+                <div class="col-2 product-clicked">
                         <div class="product-clicked-buttons">
                                 <select class="size">
                                         <option selected>Size</option>
@@ -196,15 +229,19 @@
                                         <option value="L">L</option>
                                         <option value="XL">XL</option>
                                     </select>
-                        <button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button> 
+                        <button class="add-to-cart">Add to cart</button>
+                        <div class="add-to-wishlist-box">
+                            <input type="checkbox" class="add-to-wishlist" id="wishlist-check10"></input>
+                            <label for="wishlist-check10">Add to wishlist</label>
+                            </div> 
                     </div>
-                    </li>
+                </div>
             </li>
             <li class="col-2 product7">
                 <h3>Bobbies Elegant Leather Driving Shoes</h3>
                 <img src="/images/bottom/bobbies-shoes.png" alt="Bobbies Elegant Leather Driving Shoes">
                 <span>$140</span>
-                <li class="col-2 product-clicked">
+                <div class="col-2 product-clicked">
                         <div class="product-clicked-buttons">
                                 <select class="size">
                                         <option selected>Size</option>
@@ -213,15 +250,19 @@
                                         <option value="L">L</option>
                                         <option value="XL">XL</option>
                                     </select>
-                        <button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button> 
+                        <button class="add-to-cart">Add to cart</button>
+                        <div class="add-to-wishlist-box">
+                            <input type="checkbox" class="add-to-wishlist" id="wishlist-check11"></input>
+                            <label for="wishlist-check11">Add to wishlist</label>
+                            </div> 
                     </div>
-                    </li>
+                </div>
             </li>
             <li class="col-2 product8">
                 <h3>Fiorelli Rita Striped Tote Bag</h3>
                 <img src="/images/bottom/fiorelli-bag2.png" alt="Fiorelli Rita Striped Tote Bag">
-                <span>$170</span>
-                <li class="col-2 product-clicked">
+                <span class="sale">$170</span>
+                <div class="col-2 product-clicked">
                         <div class="product-clicked-buttons">
                                 <select class="size">
                                         <option selected>Size</option>
@@ -230,15 +271,19 @@
                                         <option value="L">L</option>
                                         <option value="XL">XL</option>
                                     </select>
-                        <button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button> 
+                        <button class="add-to-cart">Add to cart</button>
+                        <div class="add-to-wishlist-box">
+                            <input type="checkbox" class="add-to-wishlist" id="wishlist-check12"></input>
+                            <label for="wishlist-check12">Add to wishlist</label>
+                            </div> 
                     </div>
-                    </li>
+                </div>
             </li>
             <li class="col-2 product9">
                 <h3>H&amp;M Canvas Parka</h3>
                 <img src="/images/bottom/h-parka.png" alt="H&amp;M Canvas Parka">
                 <span>$69</span>
-                <li class="col-2 product-clicked">
+                <div class="col-2 product-clicked">
                         <div class="product-clicked-buttons">
                                 <select class="size">
                                         <option selected>Size</option>
@@ -247,15 +292,19 @@
                                         <option value="L">L</option>
                                         <option value="XL">XL</option>
                                     </select>
-                        <button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button> 
+                        <button class="add-to-cart">Add to cart</button>
+                        <div class="add-to-wishlist-box">
+                            <input type="checkbox" class="add-to-wishlist" id="wishlist-check13"></input>
+                            <label for="wishlist-check13">Add to wishlist</label>
+                            </div> 
                     </div>
-                    </li>
+                </div>
             </li>
             <li class="col-2 product10">
                 <h3>Asos Skinny Band Felt Floppy Hat</h3>
                 <img src="/images/bottom/asos-hat.png" alt="Asos Skinny Band Felt Floppy Hat">
                 <span>$24</span>
-                <li class="col-2 product-clicked">
+                <div class="col-2 product-clicked">
                         <div class="product-clicked-buttons">
                                 <select class="size">
                                         <option selected>Size</option>
@@ -264,15 +313,19 @@
                                         <option value="L">L</option>
                                         <option value="XL">XL</option>
                                     </select>
-                        <button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button> 
+                        <button class="add-to-cart">Add to cart</button>
+                        <div class="add-to-wishlist-box">
+                            <input type="checkbox" class="add-to-wishlist" id="wishlist-check14"></input>
+                            <label for="wishlist-check14">Add to wishlist</label>
+                            </div> 
                     </div>
-                    </li>
+                </div>
             </li>
             <li class="col-2 product11">
                 <h3>Ted Baker Leather Massenger Bag</h3>
                 <img src="/images/bottom/ted-bag.png" alt="Ted Baker Leather Massenger Bag">
                 <span>$344</span>
-                <li class="col-2 product-clicked">
+                <div class="col-2 product-clicked">
                         <div class="product-clicked-buttons">
                                 <select class="size">
                                         <option selected>Size</option>
@@ -281,15 +334,19 @@
                                         <option value="L">L</option>
                                         <option value="XL">XL</option>
                                     </select>
-                        <button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button> 
+                        <button class="add-to-cart">Add to cart</button>
+                        <div class="add-to-wishlist-box">
+                            <input type="checkbox" class="add-to-wishlist" id="wishlist-check15"></input>
+                            <label for="wishlist-check15">Add to wishlist</label>
+                            </div> 
                     </div>
-                    </li>
+                </div>
             </li>
             <li class="col-2 product12">
                 <h3>H&amp;M Canvas Parka</h3>
                 <img src="/images/bottom/h-parka2.png" alt="H&amp;M Canvas Parka">
                 <span>$69</span>
-                <li class="col-2 product-clicked">
+                <div class="col-2 product-clicked">
                         <div class="product-clicked-buttons">
                                 <select class="size">
                                         <option selected>Size</option>
@@ -298,9 +355,13 @@
                                         <option value="L">L</option>
                                         <option value="XL">XL</option>
                                     </select>
-                        <button class="add-to-cart">Add to cart</button><button class="add-to-wishlist">Add to wishlist</button> 
+                        <button class="add-to-cart">Add to cart</button>
+                        <div class="add-to-wishlist-box">
+                            <input type="checkbox" class="add-to-wishlist" id="wishlist-check16"></input>
+                            <label for="wishlist-check16">Add to wishlist</label>
+                            </div> 
                     </div>
-                    </li>
+                </div>
             </li>
         </ul>
     </div>
