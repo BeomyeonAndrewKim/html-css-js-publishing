@@ -81,7 +81,7 @@
     .product-clicked{
         display: none;
         position: relative;
-        transform: translateY(-104%);
+        transform: translateY(-104.1%);
         opacity: 0.8;
         background: darkblue;
         vertical-align: center;
