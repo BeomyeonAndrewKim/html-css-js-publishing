@@ -115,7 +115,7 @@ html, body, button, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p
   display: inline-block;
   width: 13px;
   height: 15px;
-  background-image: url("/Images/icon.png");
+  background-image: url("../Images/icon.png");
   position: absolute;
   left: 76px;
   top: 300px;
@@ -177,10 +177,10 @@ html, body, button, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p
   padding-top: 60px;
 }
 .previous {
-  background: url("/Images/move-previous.png");
+  background: url("../Images/move-previous.png");
 }
 .next {
-  background: url("/Images/move-next.png");
+  background: url("../Images/move-next.png");
 }
 .photo-slide-count {
   display: inline-block;
@@ -227,7 +227,7 @@ blockquote::before {
   top: 1850px;
   width: 13px;
   height: 11px;
-  background: url("/Images/quote.png");
+  background: url("../Images/quote.png");
 }
 blockquote img {
   border-radius: 50%;

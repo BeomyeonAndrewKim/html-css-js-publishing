@@ -1,6 +1,6 @@
     @charset "utf-8";
-    @import url("/css/normalize.css");
-    @import url("/css/fonts.css");
+    @import url("./normalize.css");
+    @import url("./fonts.css");
     /* Box-Sizing */
     
     *,
@@ -150,15 +150,15 @@
     }
     
     .product1 span::before {
-        background: url('/images/hit.png') no-repeat;
+        background: url('../images/hit.png') no-repeat;
     }
     
     .product2 span::before {
-        background: url('/images/sale.png') no-repeat;
+        background: url('../images/sale.png') no-repeat;
     }
     
     .product4 span::before {
-        background: url('/images/new.png') no-repeat;
+        background: url('../images/new.png') no-repeat;
     }
     
    
@@ -216,7 +216,7 @@
     }
     
     .wish-list-1>span::after {
-        background: url("/images/new.png") no-repeat;
+        background: url("../images/new.png") no-repeat;
         display: inline-block;
         content: "";
         width: 34px;
@@ -231,7 +231,7 @@
         color: #a1a1a1;
         font-size: 9px;
         letter-spacing: 0.9px;
-        background: url("/images/sale.png") no-repeat;
+        background: url("../images/sale.png") no-repeat;
         text-align: right;
         float: left;
         margin-top: 23px;
@@ -239,7 +239,7 @@
     }
     
     .wish-list-4>span::after {
-        background: url("/images/hit.png") no-repeat;
+        background: url("../images/hit.png") no-repeat;
         display: inline-block;
         content: "";
         width: 34px;
@@ -281,7 +281,7 @@
         display: inline-block;
         margin-left: 28px;
         transform: translateY(-1px);
-        background: url("/images/down.png") no-repeat;
+        background: url("../images/down.png") no-repeat;
     }
     
     .add-to-cart {
@@ -302,7 +302,7 @@
     input[type=checkbox] + label { 
     display: inline-block; 
     padding-left: 22px; 
-    background: url('/images/add-to-wishlist.png') no-repeat; 
+    background: url('../images/add-to-wishlist.png') no-repeat; 
     height: 14px;
     line-height: 14px;
     font-size:12px;
@@ -310,7 +310,7 @@
     }
     
     input[type=checkbox]:checked + label {
-     background: url('/images/added.png') no-repeat;
+     background: url('../images/added.png') no-repeat;
      height: 14px;
      line-height: 14px;
      font-size:12px;
@@ -375,9 +375,9 @@
         transform: translateY(1px);
     }
     .product8 span::before{
-        background: url("/images/sale.png") no-repeat;
+        background: url("../images/sale.png") no-repeat;
     }
     .product11 span::before{
-        background: url("/images/new.png") no-repeat;
+        background: url("../images/new.png") no-repeat;
     }
     
