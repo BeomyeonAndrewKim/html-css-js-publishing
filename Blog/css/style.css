@@ -4,7 +4,7 @@
 
 /* Common Fonts */
 
-.blog-article1 h3, .blog-article1 p, .photo-slide-count, .blog-article2 h3, .blog-article2 p, blockquote>cite, .related-contents-article, .btb {
+.blog-article1 h3, .blog-article1 p, .photo-slide-count, .photo-slide-max, .blog-article2 h3, .blog-article2 p, blockquote>cite, .related-contents-article, .btb {
   font-family: "Varela Round";
 }
 .editor span, .blog-article1 h4, .blue-ocean-title, .photo-slide span, blockquote>p, blockquote span, .wolf span {
@@ -20,7 +20,7 @@
 .datetime, .blue-ocean-title, .photo-slide, blockquote span, .wolf span {
   color: #b8b8b8;
 }
-.blog-article2-top, .blog-article2-bottom, .photo-slide-count {
+.blog-article2-top, .blog-article2-bottom, .photo-slide-count, .photo-slide-max {
   color: #868688;
 }
 .blog-article1 h3, blockquote, .related-contents h3 {
@@ -190,10 +190,10 @@ html, body, button, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p
   position: relative;
   top: -40px;
 }
-.photo-slide-count span {
+.photo-slide-max {
   font-size: 8px;
   position: relative;
-  top: -4px;
+  top: -44px;
 }
 
 /* Blog Article 2 */
