@@ -1,10 +1,90 @@
 @charset "utf-8";
 @import url("./normalize.css");
-@media (max-width:999px) {
+@media (max-width: 999px) {
   * {
     box-sizing: border-box;
   }
-  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -12,15 +92,20 @@
     font: inherit;
     vertical-align: baseline;
   }
-  a:link, a:visited {
+  a:link,
+  a:visited {
     color: inherit;
     text-decoration: none;
   }
-  a:hover, a:focus {
+  a:hover,
+  a:focus {
     color: red;
   }
+  .container {
+    position: relative;
+  }
   .header {
-    background-color: #38302E;
+    background-color: #38302e;
   }
   .logo {
     display: block;
@@ -44,20 +129,37 @@
     padding: 10px;
   }
   .navigation {
-    background-color: blue;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+  }
+  .menu-button {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 100px;
+    width: 50px;
+  }
+  .menu-button-stick {
+    width: 50px;
+    height: 8px;
+    background: #ffffff;
+    display: inline-block;
   }
   .main-menu {
-    display: none;
-    background-color: orange;
+    margin-top: 50px;
     text-align: center;
-    margin-top: 10px;
+    min-width: 300px;
+    height: 100vh;
   }
-  .main-menu>ul {
-    display: inline-block;
+  .main-menu > ul {
+    color: #ffffff;
+    display: block;
     font-size: 1.2rem;
   }
-  .main-menu>ul>li {
-    font-size: 1.0rem;
+  .main-menu > ul > li {
+    font-size: 1rem;
     list-style: none;
   }
   .main-content {
@@ -65,7 +167,11 @@
     background-color: skyblue;
     height: auto;
   }
-  .recommendation, .News, .board, .twitter, .favorite {
+  .recommendation,
+  .News,
+  .board,
+  .twitter,
+  .favorite {
     text-align: center;
     display: block;
     border: 1px solid red;
@@ -73,33 +179,31 @@
   .slogan {
     display: block;
     text-align: center;
-    background-color: darkgrey
+    background-color: darkgrey;
   }
   footer {
     background-color: silver;
   }
 }
-@media (min-width:1000px) {
+@media (min-width: 1000px) {
   * {
     box-sizing: border-box;
   }
-  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-  }
-  .header, .main-menu, .main-content, .slogan {
+
+  .header,
+  .main-menu,
+  .main-content,
+  .slogan {
     width: 80%;
     margin: 0 auto;
   }
-  a:link, a:visited {
+  a:link,
+  a:visited {
     color: inherit;
     text-decoration: none;
   }
-  a:hover, a:focus {
+  a:hover,
+  a:focus {
     color: red;
   }
   .header {
@@ -148,9 +252,9 @@
     font-weight: 700;
     text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
   }
-  .main-menu>ul>li {
+  .main-menu > ul > li {
     padding: 5px;
-    font-size: 1.0rem;
+    font-size: 1rem;
     list-style: none;
   }
   .main-content {
@@ -176,7 +280,9 @@
     display: block;
     background-color: yellow;
   }
-  .board, .twitter, .favorite {
+  .board,
+  .twitter,
+  .favorite {
     display: inline-block;
     border: 1px solid red;
   }
@@ -192,7 +298,7 @@
   .slogan {
     display: block;
     text-align: center;
-    background-color: darkgrey
+    background-color: darkgrey;
   }
   footer {
     background-color: silver;
