@@ -104,6 +104,7 @@
   .container {
     position: relative;
   }
+  /* Header */
   .header {
     background-color: #38302e;
   }
@@ -128,13 +129,23 @@
     text-align: center;
     padding: 10px;
   }
+
+  /* Navigation */
   .navigation {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.6);
     top: 0;
     left: 0;
+    transform: translateX(-100%);
   }
+  .navigation.clicked {
+    transform: translateX(0);
+  }
+
+  /* navigation__menuButton */
+
   .menu-button {
+    font-size: 0;
     display: inline-block;
     position: absolute;
     right: 10px;
@@ -142,26 +153,61 @@
     width: 50px;
   }
   .menu-button-stick {
-    width: 50px;
-    height: 8px;
+    width: 40px;
+    height: 6px;
     background: #ffffff;
     display: inline-block;
   }
+  .menu-button > .second {
+    margin-top: 5px;
+  }
+  .menu-button > .third {
+    margin-top: 5px;
+  }
+  .menu-button.clicked > .first {
+    transform: rotate(45deg);
+    margin-bottom: -10px;
+  }
+  .menu-button.clicked > .second {
+    transform: translateX(-50px);
+    display: none;
+  }
+  .menu-button.clicked > .third {
+    transform: rotate(-45deg);
+  }
+
+  /* navigation__main-menu */
+
   .main-menu {
-    margin-top: 50px;
-    text-align: center;
-    min-width: 300px;
+    margin: 50px auto 0 50px;
+    text-align: left;
+    min-width: 200px;
     height: 100vh;
   }
   .main-menu > ul {
     color: #ffffff;
     display: block;
     font-size: 1.2rem;
+    margin-bottom: 20px;
+    overflow: hidden;
+    height: 1.2rem;
+  }
+  .main-menu > ul.clicked {
+    overflow: initial;
+    height: initial;
+  }
+  .main-menu > ul::before {
+    content: "+";
+  }
+  .main-menu > ul.clicked::before {
+    content: "-";
   }
   .main-menu > ul > li {
     font-size: 1rem;
     list-style: none;
+    margin-left: 15px;
   }
+
   .main-content {
     margin-top: 20px;
     background-color: skyblue;
@@ -189,7 +235,7 @@
   * {
     box-sizing: border-box;
   }
-
+  /* header */
   .header,
   .main-menu,
   .main-content,
@@ -231,6 +277,11 @@
   .search {
     text-align: right;
     margin: 40px 0 0 0;
+  }
+
+  /* navigation */
+  .menu-button {
+    display: none;
   }
   .navigation {
     margin-top: 10px;
