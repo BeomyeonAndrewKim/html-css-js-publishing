@@ -317,11 +317,17 @@
     display: block;
     background-color: coral;
   }
+
+  /* Main */
+
+  /* Recommendation */
+  
   .recommendation {
     display: inline-block;
     width: 29%;
     border: 1px solid red;
   }
+  
   .News {
     display: inline-block;
     width: 70%;
