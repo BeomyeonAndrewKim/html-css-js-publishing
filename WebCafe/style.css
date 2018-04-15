@@ -1,106 +1,53 @@
 @charset "utf-8";
 @import url("./normalize.css");
+
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: red;
+}
+
+/* Main */
+
+.main-section-header{
+  background-image: url('./images/sprite_main.png');
+  background-repeat: no-repeat;
+  min-height:60px;
+  margin-left:10px;
+  padding:5px 0 0 65px;
+}
+
+.recommendation-header{
+  background-position:0 0;
+}
+
+.recommendation-figure{
+  text-align: center;
+}
+
+.recommendation-figure > img{
+  max-width:100%;
+  height:auto;
+}
+
+.recommendation-figure > figcaption{
+  margin: 10px 0;
+}
+
+.recommendation-figure > p{
+  color:#B3D180;
+  font-size:2rem;
+}
+
+.recommendation-header > span{
+  color:#B3D180;
+}
+
 @media (max-width: 999px) {
-  * {
-    box-sizing: border-box;
-  }
-  html,
-  body,
-  div,
-  span,
-  applet,
-  object,
-  iframe,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  blockquote,
-  pre,
-  a,
-  abbr,
-  acronym,
-  address,
-  big,
-  cite,
-  code,
-  del,
-  dfn,
-  em,
-  img,
-  ins,
-  kbd,
-  q,
-  s,
-  samp,
-  small,
-  strike,
-  strong,
-  sub,
-  sup,
-  tt,
-  var,
-  b,
-  u,
-  i,
-  center,
-  dl,
-  dt,
-  dd,
-  ol,
-  ul,
-  li,
-  fieldset,
-  form,
-  label,
-  legend,
-  table,
-  caption,
-  tbody,
-  tfoot,
-  thead,
-  tr,
-  th,
-  td,
-  article,
-  aside,
-  canvas,
-  details,
-  embed,
-  figure,
-  figcaption,
-  footer,
-  header,
-  hgroup,
-  menu,
-  nav,
-  output,
-  ruby,
-  section,
-  summary,
-  time,
-  mark,
-  audio,
-  video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-  }
-  a:link,
-  a:visited {
-    color: inherit;
-    text-decoration: none;
-  }
-  a:hover,
-  a:focus {
-    color: red;
-  }
   .container {
     position: relative;
   }
@@ -207,21 +154,29 @@
     list-style: none;
     margin-left: 15px;
   }
+  
+  /* Main */
 
   .main-content {
     margin-top: 20px;
-    background-color: skyblue;
     height: auto;
   }
-  .recommendation,
+
+  .recommendation
   .News,
   .board,
   .twitter,
   .favorite {
     text-align: center;
     display: block;
-    border: 1px solid red;
   }
+
+  /* Recommendation */
+
+  .recommendation > figure{
+    text-align: center;
+  }
+
   .slogan {
     display: block;
     text-align: center;
@@ -235,7 +190,7 @@
   * {
     box-sizing: border-box;
   }
-  /* header */
+
   .header,
   .main-menu,
   .main-content,
@@ -243,15 +198,8 @@
     width: 80%;
     margin: 0 auto;
   }
-  a:link,
-  a:visited {
-    color: inherit;
-    text-decoration: none;
-  }
-  a:hover,
-  a:focus {
-    color: red;
-  }
+  /* header */
+
   .header {
     position: relative;
   }
@@ -308,25 +256,26 @@
     font-size: 1rem;
     list-style: none;
   }
+ 
+
+  /* Main */
+
   .main-content {
     margin-top: 20px;
-    background-color: skyblue;
     height: auto;
   }
   .main-contents-1 {
     display: block;
-    background-color: coral;
   }
-
-  /* Main */
 
   /* Recommendation */
   
   .recommendation {
     display: inline-block;
-    width: 29%;
-    border: 1px solid red;
+    width: 35%;
   }
+
+  /* News */
   
   .News {
     display: inline-block;
