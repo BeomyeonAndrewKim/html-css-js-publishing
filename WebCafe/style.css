@@ -21,8 +21,14 @@ a:focus {
   padding:5px 0 0 65px;
 }
 
+/* Recommendation */
+
 .recommendation-header{
   background-position:0 0;
+}
+
+.recommendation-header > span{
+  color:#B3D180;
 }
 
 .recommendation-figure{
@@ -43,8 +49,16 @@ a:focus {
   font-size:2rem;
 }
 
-.recommendation-header > span{
-  color:#B3D180;
+
+
+/* News */
+
+.news-header{
+  background-position:0 110px;
+}
+
+.news-header > span{
+  color:#E4CA6A;
 }
 
 @media (max-width: 999px) {
@@ -279,9 +293,11 @@ a:focus {
   
   .News {
     display: inline-block;
-    width: 70%;
+    width: 64%;
     border: 1px solid red;
   }
+
+
   .main-contents-2 {
     display: block;
     background-color: yellow;
